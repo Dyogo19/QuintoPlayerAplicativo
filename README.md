@@ -8,13 +8,9 @@ Esta aplicação foi desenvolvida para simplificar o gerenciamento de partidas e
 ## Funcionalidades Principais
 
 - **Criação de Partidas**: Crie novas partidas de futebol.
-- 
 - **Listagem de Partidas**: Liste novas partidas de futebol.
-
 - **Gerenciamento de Jogadores**: Cadastre novos jogadores.
-- 
 - **Listagem de Jogadores**: Liste novos jogadores.
-
 - **Criação de avaliação para os usuarios**: Crie novas avaliações para os usuarios que você jogou
 
 ## Requisitos
