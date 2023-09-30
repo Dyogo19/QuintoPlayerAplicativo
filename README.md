@@ -19,6 +19,8 @@ Certifique-se de ter pelo menos o Java 8 instalado para executar esta aplicaçã
 Certifique-se de ter instalado Android Studio para executar esta aplicação,
 Certifique-se de ter instalado SDK e JDK para executar esta aplicação
 
+
+## Execute a API primeiro na sua IDEA,logo após
 ## Execute no Android Studio, criando um emulador e dando run no projeto
 
 
