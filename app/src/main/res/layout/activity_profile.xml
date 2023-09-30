@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cor_azul"
+        tools:context=".profile.ProfileActivity">
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_margin="40dp"
+            android:src="@drawable/quinto_player_splash"
+            app:layout_constraintBottom_toTopOf="@id/TVEmail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TVEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintBottom_toTopOf="@id/TVSenha"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed">
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="40dp"
+                android:hint="@string/email"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TVSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="18dp"
+            app:layout_constraintStart_toStartOf="@id/TVEmail"
+            app:layout_constraintTop_toBottomOf="@+id/TVEmail"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="40dp"
+                android:hint="@string/senha"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:maxLength="16" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TVNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="18dp"
+            android:text="@string/inserirNome"
+            app:layout_constraintBottom_toTopOf="@+id/inserirNome"
+            app:layout_constraintEnd_toEndOf="@id/TVEmail"
+            app:layout_constraintStart_toStartOf="@id/TVSenha"
+            app:layout_constraintTop_toBottomOf="@+id/TVSenha"
+            tools:ignore="NotSibling">
+
+
+            <EditText
+                android:id="@+id/inserirNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="40dp"
+                android:hint="@string/inserirNome"
+                android:imeOptions="actionDone" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TVNumero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="18dp"
+            android:text="@string/inserirNumero"
+            app:layout_constraintBottom_toTopOf="@+id/inserirNumero"
+            app:layout_constraintEnd_toEndOf="@id/TVEmail"
+            app:layout_constraintStart_toStartOf="@id/TVSenha"
+            app:layout_constraintTop_toBottomOf="@+id/TVNome"
+            tools:ignore="NotSibling">
+
+            <EditText
+                android:id="@+id/inserirNumero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="40dp"
+                android:hint="@string/inserirNumero"
+                android:inputType="phone"
+                android:imeOptions="actionDone" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/registrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:text="@string/registrar"
+            android:backgroundTint="@color/cor_azul"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/TVSenha"
+            app:layout_constraintStart_toStartOf="@id/TVSenha"
+            app:layout_constraintTop_toBottomOf="@id/TVNome" />
+
+        <ProgressBar
+            android:id="@+id/pb_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

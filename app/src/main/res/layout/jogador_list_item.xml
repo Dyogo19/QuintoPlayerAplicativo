@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginVertical="12dp"
+        app:cardBackgroundColor="#C3C3C3"
+        app:cardCornerRadius="12dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tv_placeHolderNomeJogador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome : "
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_nomeJogador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Caio"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@id/tv_placeHolderNomeJogador"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_placeHolderDataEHora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Horario Diponível:"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_placeHolderNomeJogador" />
+
+            <TextView
+                android:id="@+id/tv_dataEHoraJogador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="19:00"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@id/tv_placeHolderDataEHora"
+                app:layout_constraintTop_toBottomOf="@+id/tv_placeHolderNomeJogador" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

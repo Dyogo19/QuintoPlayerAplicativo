@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">QuintoPlayerApp</string>
+    <string name="usuarionovo">Novo Por Aqui?</string>
+    <string name="email">Email</string>
+    <string name="senha">Senha</string>
+    <string name="login">Login</string>
+    <string name="inserirSenha">Insira sua senha</string>
+    <string name="inserirEmail">Insira seu email</string>
+    <string name="inserirNome">Nome Completo</string>
+    <string name="inserirNumero">Numero de telefone</string>
+    <string name="registrar">Registrar</string>
+    <string name="sbv">Seja bem-vindo %s</string>
+    <string name="login_error_message">E-mail ou senha estão inválidos!</string>
+    <string name="login_email_error_message">E-mail inválido</string>
+    <string name="login_password_error_message">Senha inválida</string>
+    <string name="login_name_error_message">Nome inválido</string>
+    <string name="login_number_error_message">Numero inválido</string>
+    <string name="home">QuintoPlayer</string>
+    <string name="cadastroPJ">Cadastrar Jogador ou partida</string>
+    <string name="listaJogadores">Jogadores</string>
+    <string name="listaJogos">Jogos</string>
+    <string name="perfil">Perfil</string>
+    <string name="inserirjogador">Nome Jogador</string>
+    <string name="horaLivre">Data e hora livre</string>
+    <string name="descricao">Descrição da partida</string>
+    <string name="endereco">Endereço</string>
+    <string name="dataEHoraLivre">Data e Hora</string>
+    <string name="register_name_error_message">Nome inválido</string>
+    <string name="register_dataEHorario_error_message">Data inválida, não pode estar vazia!</string>
+    <string name="register_endereco_error_message">Endereco inválido, não pode estar vazio!</string>
+    <string name="register_descricao_error_message">Descrição inválida, não pode estar vazia!</string>
+    <string name="erro_message">Complete todos os dados para seguir adiante!</string>
+    <string name="register_namejogador_error_message">Nome inválido, não pode estar vazio!</string>
+    <string name="cadastrar_partida">Cadastrar partida</string>
+    <string name="cadastrar_jogador">Cadastrar jogador</string>
+    <string name="jogadores">Jogadores</string>
+    <string name="partidas">Partidas</string>
+    <string name="home_central">home</string>
+    <string name="register_user_succes">Usuario criado com sucesso</string>
+    <string name="avaliacao_do_jogador">Avaliação do jogador</string>
+    <string name="nota">Nota</string>
+    <string name="cadastrar_avaliacao">Cadastrar Avaliação</string>
+    <string name="destinatario">Destinatario</string>
+
+</resources>

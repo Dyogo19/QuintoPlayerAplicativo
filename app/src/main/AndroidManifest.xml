@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:name=".App"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.QuintoPlayerApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".jogadores.jogadorRegister.view.JogadorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".jogadores.jogadorRegister.view.JogadorRegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".jogos.jogoRegister.view.JogoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".jogos.jogoRegister.view.JogoRegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".perfil.PerfilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".perfil.PerfilPostadorActivity"
+            android:exported="false" />
+        <activity android:name=".perfil.avaliacaoRegister.view.AvaliacaoRegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".login.view.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".profile.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".home.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Splash.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

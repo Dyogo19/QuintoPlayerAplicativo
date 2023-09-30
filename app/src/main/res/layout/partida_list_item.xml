@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginVertical="12dp"
+        app:cardBackgroundColor="#C3C3C3"
+        app:cardCornerRadius="12dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tv_placeHolderDescricao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descricao:"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/tv_descricao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Futsal 2/5"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@id/tv_placeHolderDescricao"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_placeHolderEnderecoDoJogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Local:"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_placeHolderDescricao" />
+
+            <TextView
+                android:id="@+id/tv_enderecoDoJogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Futhouse Porto-Alegre"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@id/tv_placeHolderEnderecoDoJogo"
+                app:layout_constraintTop_toBottomOf="@+id/tv_placeHolderDescricao" />
+
+            <TextView
+                android:id="@+id/tv_placeHolderDataEHora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Horario:"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_placeHolderEnderecoDoJogo" />
+
+            <TextView
+                android:id="@+id/tv_dataEHora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="19:00"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@id/tv_placeHolderDataEHora"
+                app:layout_constraintTop_toBottomOf="@+id/tv_placeHolderEnderecoDoJogo" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
